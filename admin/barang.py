@@ -720,10 +720,15 @@ class UpdateCepatForm(tk.Toplevel):
         self.combo.bind("<<ComboboxSelected>>", self._on_select_barang)
 
         tk.Label(body, text="Tambah Stok (opsional)", font=("Segoe UI", 10, "bold"), bg=WHITE).pack(anchor="w")
+<<<<<<< HEAD
         vcmd_uc = _make_digit_validator(self)
         self.ent_stok = tk.Entry(body, font=("Segoe UI", 11), relief="solid", bd=1,
                                   bg=LIGHT_GRAY, validate="key", validatecommand=vcmd_uc)
         self.ent_stok.pack(fill="x", pady=(2, 15), ipady=7)
+=======
+        self.ent_stok = tk.Entry(body, font=("Segoe UI", 11), relief="solid", bd=1, bg=LIGHT_GRAY)
+        self.ent_stok.pack(fill="x", pady=(2, 15), ipady=7)  
+>>>>>>> 0e8bd3a (feat: redesign halaman utama dan login admin)
 
         tk.Label(body, text="Update Foto", font=("Segoe UI", 10, "bold"), bg=WHITE).pack(anchor="w", pady=(0, 4))
 
